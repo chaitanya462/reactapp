@@ -17,7 +17,7 @@ export default class Body extends Component{
    
     async componentDidMount()
     {
-        const url="https://linguisticsrestapi.herokuapp.com/details/";
+        const url="https://linguistic-application-api.herokuapp.com//details/";
          await axios.get(url).then(res=>{
              this.setState({loading:true,data:res.data})
            

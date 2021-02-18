@@ -20,7 +20,7 @@ export default class CardComponent extends Component{
    async handleDelete()
     {
         console.log("handled")
-        await axios.delete(`https://linguisticsrestapi.herokuapp.com/details/delete/${this.props.id}`).then(res=>{
+        await axios.delete(`https://linguistic-application-api.herokuapp.com//details/delete/${this.props.id}`).then(res=>{
              this.setState({delete:true})
         })
 

@@ -63,7 +63,7 @@ export default class CreatePage extends Component
 
         event.preventDefault();
         console.log(this.state)
-        axios.post("https://linguisticsrestapi.herokuapp.com/details/insert",{name:this.state.name,language:this.state.language,level:this.state.level,
+        axios.post("https://linguistic-application-api.herokuapp.com//details/insert",{name:this.state.name,language:this.state.language,level:this.state.level,
       link:this.state.link,password:this.state.password,dateandtime:this.state.dateandtime}  
     
     ).then( (res)=>{
